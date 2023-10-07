@@ -1,8 +1,10 @@
+import { username, tag, location, avatar, stats } from './user';
 // import { Profile } from './user.json'
 // console.log(username, tag, location, avatar, stats);
 console.log(Profile);
 
-function App() {
+function App() { 
+  }
   return 
 export default App;
 

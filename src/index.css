@@ -1,4 +1,8 @@
-@import-normalize; /* bring in normalize.css styles */
+@import-normalize; /*bring in normalize.css styles */
+/* @import '~@csstools/normalize.css'; */
+@import '~sanitize.css';
+@import '~sanitize.css/forms.css';
+@import '~sanitize.css/typography.css';
 
 body {
   margin: 0;
