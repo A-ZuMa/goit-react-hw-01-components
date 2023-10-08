@@ -64,5 +64,5 @@
   font-weight: 700;
   display: block;
   text-align: center;
-  color: var(--colorAccent);
+  color: var(--colorPrimary);
 }
