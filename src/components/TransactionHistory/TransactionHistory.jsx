@@ -1,4 +1,5 @@
 import React from 'react';
+import clsx from 'clsx';
 import styles from './TransactionHistory.module.css';
 
 export const TransactionHistory = ({ items }) => {
@@ -15,7 +16,11 @@ export const TransactionHistory = ({ items }) => {
       <tbody>
         {items.map(item => (
           <tr key={item.id}>
-            <td>{item.type}</td>
+            <td className={clsx(
+              styles.type,
+              item.type === "deposit" && styles.green,
+              item.type === "withdrawal" && styles.red,
+            )}>{item.type}</td>
             <td className={styles.TransactionAmmount}>{item.amount}</td>
             <td className={styles.TransactionCurrency}>{item.currency}</td>
           </tr>
