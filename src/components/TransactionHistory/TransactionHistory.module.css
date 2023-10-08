@@ -18,6 +18,9 @@
 .TransactionCurrency {
   font-weight: 900;
 }
+.type {
+  text-transform: capitalize;
+}
 .red {
   color: red;
   font-style: italic;
